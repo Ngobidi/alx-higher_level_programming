@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-import strings
-print(strings.ascii_uppercase)
+import string
+print(string.ascii_uppercase)
 
