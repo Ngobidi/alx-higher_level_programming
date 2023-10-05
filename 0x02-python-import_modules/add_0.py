@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 def add(a, b):
-    """My summation function
+    """My addition function
     Args:
-        a: integer 1
-        b: integer 2
+        a: first integer
+        b: second integer
     Returns:
         The return value. a + b
     """
