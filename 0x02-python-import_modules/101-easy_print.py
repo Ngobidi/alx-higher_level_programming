@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-import eze
+import sys
+sys.stdout.write("#pythoniscool")
 
 
 
