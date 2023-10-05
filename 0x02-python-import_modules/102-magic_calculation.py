@@ -1,14 +1,10 @@
 #!/usr/bin/python3
-
 def magic_calculation(a, b):
-    """exactly same followed by bytecode in alx."""
     from magic_calculation_102 import add, sub
-
-    if c < d:
-        e = add(c, d)
-        for z in range(4, 6):
-            e = add(e, z)
-        return (e)
-
+    if a < b:
+        c = add(a, b)
+        for n in range(4, 6):
+            c = add(c, n)
+        return c
     else:
-        return(sub(c, d))
+        return sub(a, b)
