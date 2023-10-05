@@ -1,13 +1,9 @@
 #!/usr/bin/python3
-
-def add(c, d):
-    """My_summation function
-
+def add(a, b):
+    """My addition function
     Args:
-        c: integer 1
-        d: integer 1
-
+        a: first integer
+        b: second integer
     Returns:
-        The return value. c + d
+        The return value. a + b
     """
-    return (c + d)
