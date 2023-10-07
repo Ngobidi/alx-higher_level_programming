@@ -3,10 +3,10 @@
 #include "lists.h"
 
 /**
-  * is_palindrome - Checks if a singly linked list is a palindrome
-  * @head: The head of the singly linked list
+  * is_palindrome - validate singly linked_list is a palindrome
+  * @head: pointer to head of the singly linked_list
   *
-  * Return: 0 if it is not a palindrome, 1 if it is a palindrome
+  * Return: 1 if validated, else 0
   */
 int is_palindrome(listint_t **head)
 {
@@ -37,11 +37,11 @@ int is_palindrome(listint_t **head)
 }
 
 /**
-  * get_nodeint_at_index - Gets a node from a linked list
-  * @head: The head of the linked list
-  * @index: The index to find in the linked list
+  * get_nodeint_at_index - obtain a node from a linked_list
+  * @head: pointer to head of the linked_list
+  * @index: The index_node to search in the linked list
   *
-  * Return: The specific node of the linked list
+  * Return: current node of the linked_list
   */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
@@ -64,10 +64,10 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 }
 
 /**
-  * slistint_len - Counts the number of elements in a linked list
-  * @h: The linked list to count
+  * slistint_len - validates the number of elements in a linked_list
+  * @h: The linked_list to validated
   *
-  * Return: Number of elements in the linked list
+  * Return: length of elements in the linked_list
   */
 size_t listint_len(const listint_t *h)
 {
