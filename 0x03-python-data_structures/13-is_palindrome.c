@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -8,8 +10,8 @@
   */
 int is_palindrome(listint_t **head)
 {
-    listint_t *start = NULL, *end = NULL;
-    unsigned int x = 0, len = 0, len_cyc = 0, len_list = 0;
+    listint_t *begin = NULL, *stop = NULL;
+    unsigned int x = 0, length = 0, length_cyc = 0, length_list = 0;
 
     if (head == NULL)
         return (0);
@@ -17,18 +19,18 @@ int is_palindrome(listint_t **head)
     if (*head == NULL)
         return (1);
     
-    start = *head;
-    len = listint_len(start);
-    len_cyc = len * 2;
-    len_list = len_cyc - 2;
-    end = *head;
+    begin = *head;
+    length = listint_len(begin);
+    length_cyc = length * 2;
+    length_list = length_cyc - 2;
+    stop = *head;
 
-    for (; x < len_cyc; x = x + 2)
+    for (; x < length_cyc; x = x + 2)
     {
-        if (start[x].b != end[len_list].b)
+        if (begin[x].n != end[length_list].n)
             return (0);
 
-        len_list = len_list - 2;
+        length_list = length_list - 2;
     }
 
     return (1);
@@ -69,13 +71,13 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
   */
 size_t listint_len(const listint_t *h)
 {
-	int y = 0;
+	int l = 0;
 
 	while (h != NULL)
 	{
-		++y;
+		++l;
 		h = h->next;
 	}
 
-	return (y);
+	return (l);
 }
