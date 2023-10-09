@@ -11,7 +11,7 @@
 int is_palindrome(listint_t **head)
 {
     listint_t *start = NULL, *end = NULL;
-    unsigned int i = 0, len = 0, len_cyc = 0, len_list = 0;
+    unsigned int f = 0, len = 0, a = 0, b = 0;
 
     if (head == NULL)
         return (0);
@@ -21,16 +21,16 @@ int is_palindrome(listint_t **head)
     
     start = *head;
     len = listint_len(start);
-    len_cyc = len * 2;
-    len_list = len_cyc - 2;
+    a = len * 2;
+    len_list = a - 2;
     end = *head;
 
-    for (; i < len_cyc; i = i + 2)
+    for (; f < a; f = f + 2)
     {
-        if (start[i].n != end[len_list].n)
+        if (start[f].n != end[b].n)
             return (0);
 
-        len_list = len_list - 2;
+        b = b - 2;
     }
 
     return (1);
