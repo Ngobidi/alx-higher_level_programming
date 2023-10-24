@@ -1,17 +1,17 @@
 #!/usr/bin/python3
 
-"""Define a class Square from the empty class.
-    using Private instance attribute (size).
+"""Define a class Square.
+    apply Private instance attribute: size.
 """
 
 
 class Square:
-    """Represent a square from the empty class."""
+    """Represents a square from 0-square"""
 
     def __init__(self, size):
-        """Initialize a new_Square.
-        
+        """Initialize a new Square.
+
         Args:
-            size (int): The size of the new_square.
+            size (int): The size of the new square.
         """
         self.__size = size
