@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""a class function"""
+"""a class"""
 
 
 class BaseGeometry:
-    """an empty class"""
+    """print an empty class"""
     def area(self):
         raise Exception("area() is not implemented")
 
@@ -15,7 +15,7 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
-    """state Rectangle that inherits from BaseGeometry"""
+    """print Rectangle that inherits from BaseGeometry"""
     def __init__(self, width, height):
         super().__init__()
         self.integer_validator('width', width)
