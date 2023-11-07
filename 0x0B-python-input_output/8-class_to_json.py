@@ -9,7 +9,7 @@ functions:
 def class_to_json(obj):
     """ retuns the dictionary description with simple data structure """
 
-    data_structure = {}
+    structure = {}
     if hasattr(obj, "__dict__"):
-       data_structure = obj.__dict__.copy()
-    return data_structure
+        structure = obj.__dict__.copy()
+    return structure
